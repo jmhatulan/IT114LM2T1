@@ -11,7 +11,7 @@
 <body>
 
     <header id="header">
-        <h1>Other exercises links</h1>
+        <h1>Other Exercises Links</h1>
     </header>
 
     <nav id="nav">
@@ -23,21 +23,14 @@
         </ul>
     </nav>
 
-    <p id="reflectionContain">
+    <div id="reflectionContain">
         <asp:ContentPlaceHolder ID="reflection" runat="server">
         </asp:ContentPlaceHolder>
-    </p>
+    </div>
 
     <footer id="footer">
-        Copyright Hatulan 2024
+        Copyright Joshua Miguel Hatulan 2024
     </footer>
-
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
 
     <style>
 

@@ -10,10 +10,21 @@
 
 <asp:Content ID="myReflection" ContentPlaceHolderID="reflection" runat="server">
 
-    How would you compare plain HTML to ASP.NET WebForms <br /> <br />
-    The code behind (C#) and JavaScript seem to share many use cases.  <br />
-    When should you implement logic in the code behind and when should you implement logic in JavaScript Provide examples.  <br /> <br />
-    Explain what post backs are.  <br />
+    <div>
+        <h4>How would you compare plain HTML to ASP.NET WebForms</h4>
+        Answer...<br /><br />
+        
+    </div>
+    <div>
+        <h4>The code behind (C#) and JavaScript seem to share many use cases.  <br />
+        When should you implement logic in the code behind and when should you implement logic in JavaScript Provide examples.  <br /></h4>
+        Answer...<br /><br />
+    </div>
+    <div>
+        <h4>Explain what post backs are.</h4>
+         Answer...<br /><br />
+    </div>
+    
 
 </asp:Content>
 
