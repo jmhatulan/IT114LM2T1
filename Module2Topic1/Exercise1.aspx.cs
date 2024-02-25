@@ -13,5 +13,20 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void playButton_Click(object sender, EventArgs e)
+        {
+            string playTitle = "Now Playing Minor Room";
+            string pauseTitle = "No Song Playing";
+
+            if (songTitle.InnerHtml == playTitle)
+            {
+                songTitle.InnerHtml = pauseTitle;
+            }
+            else
+            {
+                songTitle.InnerHtml = playTitle;
+            }
+        }
     }
 }
