@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Exercise5.master.cs" Inherits="Module2Topic1.Exercise5" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <header id="header">
+        <h1>Other exercises links</h1>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="Exercise1.aspx">Exercise #1 - Malayan Music Player</a></li>
+            <li><a href="Exercise2.aspx">Exercise #2 - Malayan Music Festival Registration</a></li>
+            <li><a href="Exercise3.aspx">Exercise #3 - What's my final grade?</a></li>
+            <li><a href="Exercise4.aspx">Exercise #4 - Mapua MCL WebDev Club Registration</a></li>
+        </ul>
+    </nav>
+
+    <p id="reflectionContain">
+        <asp:ContentPlaceHolder ID="reflection" runat="server">
+        </asp:ContentPlaceHolder>
+    </p>
+
+    <footer id="footer">
+        Copyright Hatulan 2024
+    </footer>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <style>
+
+        #header {
+            color: #247BA0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #nav {
+            background-color: #FF1654;
+            padding: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li a {
+            color: #F1FAEE;
+            font-size: 30px;
+            column-width: 5%;
+        }
+
+        li {
+            display: inline;
+            padding-left: 2px;
+            column-width: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        li a:hover {
+            background-color: #F3FFBD;
+            color: #FF1654;
+            padding: 1%;
+        }
+
+        #side {
+            text-align: center;
+            float: right;
+            width: 15%;
+            padding-bottom: 79%;
+            background-color: #F1FAEE;
+        }
+
+        #article {
+            background-color: #EEF5DB;
+            padding: 10px;
+            padding-bottom: 75%;
+        }
+
+        #footer {
+            background-color: #C7EFCF;
+            text-align: center;
+            padding-bottom: 5%;
+            font-size: 20px;
+        }
+
+        #con {
+            border: double;
+            border-color: burlywood;
+        }
+
+    </style>
+</body>
+</html>
