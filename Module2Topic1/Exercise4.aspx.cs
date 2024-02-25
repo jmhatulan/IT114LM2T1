@@ -11,7 +11,29 @@ namespace Module1Exercise1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None; // code for UnobtrusiveValidationMode error
+        }
 
+        protected void Submit_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                if (string.IsNullOrEmpty(fullName.Text) || string.IsNullOrEmpty(age.Text) || string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(confirmEmail.Text))
+                {
+                    result.Text = "Please fill up all the fields";
+                }
+                else
+                {
+                    result.Text = $"<br /><br />Full Name: {fullName.Text}<br />" +
+                                  $"Age: {age.Text}<br />" +
+                                  $"Email: {email.Text}<br />";
+                }
+
+            }
+            else
+            {
+                result.Text = "Please fill up all the fields";
+            }
         }
     }
 }
