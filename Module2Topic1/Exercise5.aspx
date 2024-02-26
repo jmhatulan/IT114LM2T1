@@ -10,19 +10,52 @@
 
 <asp:Content ID="myReflection" ContentPlaceHolderID="reflection" runat="server">
 
+
     <div>
+
         <h4>How would you compare plain HTML to ASP.NET WebForms</h4>
-        Answer...<br /><br />
+
+        <p>
+            Both HTML and ASP.NET Webforms are used to create web applications, yet they have distinct functionalities.
+            <br />
+            HTML is designed for crafting the structure of the user interface, while ASP.NET WebForms are tailored for facilitating communication with the server via user interaction. 
+            <br />
+            HTML is more oriented towards the local storage, which limits its capabilities, unlike ASP.NET Webforms where it utilizes a server-side database to store and manage data. 
+            <br />
+            This allows it to be used accross various devices withing the same server.
+        </p><br />
         
     </div>
+
     <div>
+
         <h4>The code behind (C#) and JavaScript seem to share many use cases.  <br />
         When should you implement logic in the code behind and when should you implement logic in JavaScript Provide examples.  <br /></h4>
-        Answer...<br /><br />
+
+        <p>
+            To put it simply, C# is used for backend and JavaScript is used for the front end.
+            <br /> 
+            If one were to require authentication and authorization for each user, using C# as a backend is the way to go.
+            As these logics that are recommended to have a database to store its data.
+            <br />
+            Meanwhile, if one want to create an interactive UI that changes based on user input but not necessarily have any data being stored or retrived,
+            using JavaScript as the frontend is more appropriate.
+        </p><br />
+
     </div>
+
     <div>
+
         <h4>Explain what post backs are.</h4>
-         Answer...<br /><br />
+
+        <p>
+            Postbacks, basing on their name, initiates by waiting for user interaction (post) and use that to submit to the server for processing.
+            <br />
+            After processing, the server returns information back to the web application as feedback for the user. 
+            <br />
+            This interaction can be trigged by various user inputs, such as a button click, a drop down list selection, and etc.
+        </p><br />
+
     </div>
     
 
